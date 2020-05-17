@@ -97,6 +97,8 @@ Install gems.
 $ bundle install
 ```
 
+See the [gemspec](jekyll-theme-quickstart.gemspec) file to see what dependencies get installed - including Jekyll `3.8` or higher. This came with the scaffold.
+
 
 ## Usage
 
@@ -128,13 +130,45 @@ Open your browser at
 
 This starts a Jekyll server using your theme.
 
+
+### Customize
+
 Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+
+The scaffold started with three minimal layout files, which have since been updated, based partially on the Minima theme.
+
+- `default.html`
+    ```
+    {{ content }}
+    ```
+- `page.html`
+    ```
+    ---
+    layout: default
+    ---
+
+    {{ content }}
+    ```
+- `post.html`
+    - Same as `page.html`.
+
+The scaffold started off with an empty `_includes` directory, but some have been added.
+
+
+### Releases
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 
 To add a custom directory to your theme-gem, please edit the `regexp` in `jekyll-theme-quickstart.gemspec` accordingly.
 
-### Customization
+
+### Examples
+
+See [jekyll/minima](https://github.com/jekyll/minima) on Github as an example of a simple theme.
+
+
+### Gemspec note
 
 Notes on how the fields work, for maintaining this project or forks.
 
@@ -149,6 +183,9 @@ From the original gemspec file:
 
 Bundle install will fail if these are not updated.
 
+
+#### Ignore file note
+
 This was added to `Gemfile` with the scaffold:
 
 ```
@@ -156,6 +193,8 @@ This was added to `Gemfile` with the scaffold:
 ```
 
 While `vendor/` was not. So after adding the second, the first may not be needed.
+
+
 
 ## License
 
