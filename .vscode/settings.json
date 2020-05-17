@@ -5,5 +5,8 @@
         "*.md": "jekyll",
         // Revert the above rule for a doc file.
         "README.md": "markdown",
+        "development.md": "markdown",
+        "install_as_theme.md": "markdown",
+        "notes.md": "markdown"
     },
 }
