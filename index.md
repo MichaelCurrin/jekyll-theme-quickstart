@@ -1,5 +1,5 @@
 ---
-title: Demo
+title: Jekyll Theme Quickstart - demo site
 layout: page
 ---
 
