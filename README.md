@@ -112,23 +112,46 @@ Bug reports and pull requests are welcome on GitHub at [github.com/MichaelCurrin
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
+### Clone
 
-This will not install the theme itself, just dependencies.
+Clone the repo.
+
+### Install
+
+Install Ruby and Bundler for your user as per [gist](https://gist.github.com/MichaelCurrin/3af38fca4e2903cdedfb8402c18b2936).
+
+Configured Bundler.
+
+```sh
+$ bundle config --local path vendor/bundle
+```
+
+Install project dependencies.
+
+```sh
+$ bundle install
+```
+
+This will not install the theme itself, just dependencies in [Gemfile](/Gemfile).
 
 - `gemspec`
 
-Your theme is setup just like a normal Jekyll site. To test your theme, run
+
+### Start a server
+
+Test the theme using a demo file - [index.md](/index.md).
 
 ```sh
 $ bundle exec jekyll serve
 ```
 
-Open your browser at
+_You'd normally just see a directory list by default, except a demo page has been added for easy testing. This will not be included as a file installing the project into another project._
 
-- [http://localhost:4000](http://localhost:4000)
+Open your browser at:
 
-This starts a Jekyll server using your theme.
+- [localhost:4000](http://localhost:4000)
+
+You'll get warnings about no config and if you look at the `_site` directory you'll see some files you would not expect. This is okay as it does not affect local serving and it avoids adding a config to the project.
 
 
 ### Customize
