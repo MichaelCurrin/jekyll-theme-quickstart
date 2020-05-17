@@ -183,7 +183,9 @@ The scaffold started off with an empty `_includes` directory, but some have been
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 
-To add a custom directory to your theme-gem, please edit the `regexp` in `jekyll-theme-quickstart.gemspec` accordingly.
+To add a custom directory to your theme-gem, please edit the `regexp` in [jekyll-theme-quickstart.gemspec](/jekyll-theme-quickstart.gemspec) accordingly.
+
+When tagging the repo, remember to update the tag number in that file too.
 
 
 ### Examples
