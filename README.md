@@ -54,10 +54,12 @@ See [Adding a theme to your GitHub Pages site using Jekyll](https://help.github.
 
 #### 1. Add to config
 
+Set the theme name in `remote-theme` - leave out the `theme` field.
+
 ```yaml
 # _config.yaml
 
-theme: jekyll-theme-quickstart
+remote-theme: jekyll-theme-quickstart
 
 plugins:
   - jekyll-remote-theme
@@ -77,7 +79,7 @@ From [How to install gems from git repositories](https://bundler.io/guides/git.h
 gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
 
 group :jekyll_plugins do
-    gem 'jekyll-remote-theme'
+  gem 'jekyll-remote-theme'
 end
 ```
 
