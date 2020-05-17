@@ -33,11 +33,13 @@ Set the theme name in `remote_theme`. Note you do not need to set the `theme` fi
 
 Update your project's `_config.yaml`
 ```yaml
-remote_theme: MichaelCurrin/jekyll-theme-quickstart
-
 plugins:
   - jekyll-remote-theme
+
+remote_theme: MichaelCurrin/jekyll-theme-quickstart
 ```
+
+You can also add a tag. e.g. `foo/bar@v1.0.0` or `foo/bar@develop`
 
 ### 2. Add to Gemfile
 

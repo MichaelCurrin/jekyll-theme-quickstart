@@ -1,6 +1,12 @@
 # Notes
 
-Explanatory dev notes around where the pieces from and how they work.
+Explanatory dev notes to myself around where the pieces from and how they work.
+
+
+## Docs
+
+For a full theme, include a screenshot in `README.md`.
+
 
 ## Install path
 
