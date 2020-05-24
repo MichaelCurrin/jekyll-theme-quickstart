@@ -100,28 +100,6 @@ Note the scaffold was generated with Jekyll 4 and still required `3.8`, so this 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 
-## Publishing
-> A guide to publishing a theme, if you are maintaining this theme
-
-If you need to publish your theme to RubyGems, follow these instructions as per Jekyll docs. Otherwise, you can ignore this seciton and just ignore from a Github URL.
-
-### Build
-
-```sh
-$ gem build jekyll-theme-quickstart.gemspec
-```
-
-Note the `.gem` file added in the root. This is excluded from version control. Unfortunately this is binary file so it is not so readable directly.
-
-### Push
-
-Push to publish on RubyGems. Requires an account and credentials.
-
-```sh
-$ gem push jekyll-theme-awesome-*.gem
-```
-
-
 ## Development
 
 See the [docs](/docs/) directory.
