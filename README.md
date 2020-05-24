@@ -7,15 +7,26 @@ _Note that this will work on Github Pages. You need to use Jekyll Actions or Net
 
 ## About
 
+
+### Where this comes from
+
 The theme scaffold was generated with this command and Jekyll 4:
 
 ```sh
 $ jekyll new-theme NAME
 ```
 
-## Resources
+Note that is different from `new` command.
 
-From Jekyll docs.
+### Package a theme
+
+The part that allows this project gem to be packaged as an installable gem-based theme is this file:
+
+- [jekyll-theme-quickstart.gemspec](/jekyll-theme-quickstart.gemspec)
+
+The other parts like the config and Gemfile or the layout and includes diretories are standard for a Jekyll project. The markdown pages in the root are included for a local demo and are not packaged in the theme.
+
+Resources in the Jekyll docs:
 
 - [Creating a gem-based theme](https://jekyllrb.com/docs/themes/#creating-a-gem-based-theme).
 - [Publishing your theme](https://jekyllrb.com/docs/themes/#publishing-your-theme)
