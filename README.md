@@ -26,23 +26,25 @@ The part that allows this project gem to be packaged as an installable gem-based
 
 The other parts like the config and Gemfile or the layout and includes diretories are standard for a Jekyll project. The markdown pages in the root are included for a local demo and are not packaged in the theme.
 
-Resources in the Jekyll docs:
+Resources:
 
-- [Creating a gem-based theme](https://jekyllrb.com/docs/themes/#creating-a-gem-based-theme).
-- [Publishing your theme](https://jekyllrb.com/docs/themes/#publishing-your-theme).
+- [Creating a gem-based theme](https://jekyllrb.com/docs/themes/#creating-a-gem-based-theme) in Jekyll docs.
+- [Publishing your theme](https://jekyllrb.com/docs/themes/#publishing-your-theme) in Jekyll docs.
+- [Adding a theme to your GitHub Pages site using Jekyll](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll) guide on Github's help.
 
 
 ## Installation
 >  Install this theme in your project
 
-This uses the Github-hosted approach rather than hosting on Github, since there is less friction without the signup and publish part.
+This project is hosted on Github since there is less friction without the signup and publish part.
 
-See [Adding a theme to your GitHub Pages site using Jekyll](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll) doc.
+In order to install it, make sure to include the remote-themes as covered below.
+
+- [benbalter/jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme)
+  > Jekyll plugin for building Jekyll sites with any public GitHub-hosted theme
 
 
 ### 1. Add to config
-
-Set the theme name in `remote_theme`. Note you do not need to set the `theme` field.
 
 Update your project's `_config.yaml`:
 
@@ -53,7 +55,12 @@ plugins:
 remote_theme: MichaelCurrin/jekyll-theme-quickstart
 ```
 
-You can also add a tag. e.g. `foo/bar@v1.0.0` or `foo/bar@develop`.
+Notes:
+
+- Note the underscore in `remote_theme` - the install/serve will fail quietly if there is a dash.
+- You can also add a tag in the theme. e.g. `foo/bar@v1.0.0` or `foo/bar@develop`.
+- You do _not_ need to set the `theme` field.
+
 
 ### 2. Add to Gemfile
 
