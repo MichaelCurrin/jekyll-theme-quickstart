@@ -3,9 +3,10 @@
 Explanatory dev notes to myself around where the pieces from and how they work.
 
 
-## Docs
+## Fuller themes
 
-For a full theme, include a screenshot in `README.md`.
+- Include a screenshot in `README.md`.
+- Add `vendor/` to the ignore file - if you have dependencies.
 
 
 ## Install path
