@@ -1,9 +1,13 @@
 # Development
 > Setup and run locally
 
+_TODO Figure out how to use Jekyll in the project, without making it install directly as a gem when the installing theme._
+
+
 ## Clone
 
 Clone the repo.
+
 
 ## Install
 
