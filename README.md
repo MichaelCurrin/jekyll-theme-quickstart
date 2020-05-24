@@ -59,7 +59,7 @@ Notes:
 
 - Note the underscore in `remote_theme` - the install/serve will fail quietly if there is a dash.
 - You can also add a tag in the theme. e.g. `foo/bar@v1.0.0` or `foo/bar@develop`.
-- You do _not_ need to set the `theme` field.
+- You do _not_ need to set the `theme` field. However, that might be better option if it works - since remote theme plugin runs on _every_ build which is not nice for large themes.
 
 
 ### 2. Add to Gemfile
