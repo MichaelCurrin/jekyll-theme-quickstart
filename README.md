@@ -10,7 +10,7 @@ _Note that this will work on Github Pages. You need to use Jekyll Actions or Net
 The theme scaffold was generated with this command and Jekyll 4:
 
 ```sh
-jekyll new-theme NAME
+$ jekyll new-theme NAME
 ```
 
 ## Resources
@@ -31,7 +31,8 @@ See [Adding a theme to your GitHub Pages site using Jekyll](https://help.github.
 
 Set the theme name in `remote_theme`. Note you do not need to set the `theme` field.
 
-Update your project's `_config.yaml`
+Update your project's `_config.yaml`:
+
 ```yaml
 plugins:
   - jekyll-remote-theme
@@ -39,14 +40,14 @@ plugins:
 remote_theme: MichaelCurrin/jekyll-theme-quickstart
 ```
 
-You can also add a tag. e.g. `foo/bar@v1.0.0` or `foo/bar@develop`
+You can also add a tag. e.g. `foo/bar@v1.0.0` or `foo/bar@develop`.
 
 ### 2. Add to Gemfile
 
 Update your project's `Gemfile`.
 
 ```ruby
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
 
@@ -64,7 +65,7 @@ Based on [How to install gems from git repositories](https://bundler.io/guides/g
 
 ### 3. Install
 
-Configure Bundler locally for the project once.
+Configure Bundler locally - only needed once.
 
 ```sh
 $ bundle config --local path vendor/bundle
