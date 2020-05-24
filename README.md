@@ -29,7 +29,7 @@ The other parts like the config and Gemfile or the layout and includes diretorie
 Resources in the Jekyll docs:
 
 - [Creating a gem-based theme](https://jekyllrb.com/docs/themes/#creating-a-gem-based-theme).
-- [Publishing your theme](https://jekyllrb.com/docs/themes/#publishing-your-theme)
+- [Publishing your theme](https://jekyllrb.com/docs/themes/#publishing-your-theme).
 
 
 ## Installation
