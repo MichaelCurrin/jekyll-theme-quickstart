@@ -77,7 +77,9 @@ Install gems.
 $ bundle install
 ```
 
-See the [gemspec](jekyll-theme-quickstart.gemspec) file to see what dependencies get installed - including Jekyll `3.8` or higher. This came with the scaffold.
+See the [gemspec](jekyll-theme-quickstart.gemspec) file to see what dependencies get installed. This came with the scaffold. 
+
+Note the scaffold was generated with Jekyll 4 and still required `3.8`, so this was adjusted to `4.0` to be consistently updated for reuse of this project, even though there is nothing specific in this simple theme that is Jekyll 4 specific.
 
 
 ## Usage
