@@ -21,13 +21,15 @@ $ gem build jekyll-theme-quickstart.gemspec
   File: jekyll-theme-quickstart-0.1.0.gem
 ```
 
-Note the `.gem` file added in the root.
+Note the package `.gem` file added in the root.
 
 ```
 jekyll-theme-quickstart-0.1.0.gem
 ```
 
-This is excluded from version control. Unfortunately this is binary file so it is not so readable directly.
+This is excluded from version control. 
+
+Unfortunately this is zipped file so it is not so readable directly.
 
 
 ## Push
