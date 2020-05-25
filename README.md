@@ -38,29 +38,14 @@ Resources:
 
 This project is hosted on Github since there is less friction without the signup and publish part.
 
-In order to install it, make sure to include the remote-themes as covered below.
-
-- [benbalter/jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme)
-  > Jekyll plugin for building Jekyll sites with any public GitHub-hosted theme
-
 
 ### 1. Add to config
 
 Update your project's `_config.yaml`:
 
 ```yaml
-plugins:
-  - jekyll-remote-theme
-
-remote_theme: MichaelCurrin/jekyll-theme-quickstart
+theme: jekyll-theme-quickstart
 ```
-
-Notes:
-
-- Note the underscore in `remote_theme` - the install/serve will fail quietly if there is a dash.
-- You can also add a tag in the theme. e.g. `foo/bar@v1.0.0` or `foo/bar@develop`.
-- You do _not_ need to set the `theme` field. However, that might be better option if it works - since remote theme plugin runs on _every_ build which is not nice for large themes.
-
 
 ### 2. Add to Gemfile
 
@@ -70,17 +55,7 @@ Update your project's `Gemfile`.
 source 'https://rubygems.org'
 
 gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
-
-group :jekyll_plugins do
-  gem 'jekyll-remote-theme'
-end
 ```
-
-Based on [How to install gems from git repositories](https://bundler.io/guides/git.html) doc.
-
->  Specify that a gem should come from a git repository with a .gemspec at its root
->
-> `gem 'rack', git: 'https://github.com/rack/rack'`
 
 
 ### 3. Install
@@ -91,11 +66,29 @@ Configure Bundler locally - only needed once.
 $ bundle config --local path vendor/bundle
 ```
 
-Install gems.
+Install project gems.
 
 ```sh
 $ bundle install
 ```
+
+### Installed path
+
+Note that the theme will get installed to:
+
+```
+vendor/bundle/ruby/RUBY_VERSION/bundler/gems/THEME_NAME-THEME_VERSION
+```
+
+Where the version at the end is a hash (`123456789abc`) or a tag number (`1.0.0`).
+
+Themes installed from RubyGems usually install here:
+
+```
+vendor/bundle/ruby/RUBY_VERSION/gems/THEME_NAME-THEME_VERSION
+```
+
+### Installed dependencies
 
 See the [gemspec](jekyll-theme-quickstart.gemspec) file to see what dependencies get installed. This came with the scaffold. 
 
