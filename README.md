@@ -1,9 +1,11 @@
 # Jekyll Theme Quickstart
 > Scaffold for a basic Jekyll theme for use as a reference or template
 
+<!--
 
-_Note that this will work on Github Pages. You need to use Jekyll Actions or Netlify - since this is not a theme included in the supported Github Pages dependency versions._
+_Note that this will **not** work on GitHub Pages as is. You need to use Jekyll Actions or Netlify for your deploy - since this is not a theme included in the supported GitHub Pages dependency versions. But... if you use the remote-theme plugin then you can use Jekyll theme on GH pages_
 
+-->
 
 ## About
 
@@ -47,6 +49,12 @@ Update your project's `_config.yaml`:
 theme: jekyll-theme-quickstart
 ```
 
+If using GitHub Pages, you can't use custom plugins and themes. But you can use the **remote-theme** field instead to load any theme.
+
+```yaml
+remote-theme: jekyll-theme-quickstart
+```
+
 ### 2. Add to Gemfile
 
 Update your project's `Gemfile`.
@@ -57,13 +65,18 @@ source 'https://rubygems.org'
 gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
 ```
 
+If using remote theme, add this:
+
+```ruby
+gem 'jekyll-remote-theme'
+```
 
 ### 3. Install
 
 Configure Bundler locally - only needed once.
 
 ```sh
-$ bundle config --local path vendor/bundle
+$ bundle config set --local path vendor/bundle
 ```
 
 Install project gems.
