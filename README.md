@@ -7,6 +7,10 @@ If you build a Jekyll site, you'll typically use a theme to style your site or a
 
 A theme is a way of packaging layout files, CSS styling and includes files to be installed in another Jekyll project. A theme might be made from scratch or based on a static HTML. A theme is a great way of making styling reusable across projects by you and other people. There is overhead to setting up and maintaining a theme as its own repo. So if you only plan to use the styling once and not sharing, then consider just making a normal Jekyll site which had layouts and CSS in it. And it can be setup as template for others to use or fork and allows customization.
 
+See for example this project which is not a theme but just a template project with page structure, styling and sample content.
+
+- https://github.com/MichaelCurrin/artists-portfolio
+
 
 ## About this project
 
