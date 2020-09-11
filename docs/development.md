@@ -1,5 +1,5 @@
 # Development
-> Setup and run locally
+> Setup and run a dev server that uses the theme
 
 _TODO Figure out how to use Jekyll in the project, without making it install directly as a gem when the installing theme._
 
@@ -16,7 +16,7 @@ Install Ruby and Bundler for your user as per [gist](https://gist.github.com/Mic
 Configured Bundler.
 
 ```sh
-$ bundle config --local path vendor/bundle
+$ bundle config ser --local path vendor/bundle
 ```
 
 Install project dependencies.
