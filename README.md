@@ -49,11 +49,15 @@ Update your project's `_config.yaml`:
 theme: jekyll-theme-quickstart
 ```
 
-If using GitHub Pages, you can't use custom plugins and themes. But you can use the **remote-theme** field instead to load any theme.
+If using GitHub Pages, you can't use custom plugins and themes. But you can use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach instead to load any theme.
 
 ```yaml
-remote-theme: jekyll-theme-quickstart
+remote_theme: jekyll-theme-quickstart
+
+plugins:
+  - remote-theme
 ```
+
 
 ### 2. Add to Gemfile
 
