@@ -52,10 +52,10 @@ theme: jekyll-theme-quickstart
 If using GitHub Pages, you can't use custom plugins and themes. But you can use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach instead to load any theme.
 
 ```yaml
-remote_theme: jekyll-theme-quickstart
+remote_theme: MichaelCurrin/jekyll-theme-quickstart
 
 plugins:
-  - remote-theme
+  - jekyll-remote-theme
 ```
 
 
@@ -107,14 +107,14 @@ vendor/bundle/ruby/RUBY_VERSION/gems/THEME_NAME-THEME_VERSION
 
 ### Installed dependencies
 
-See the [gemspec](jekyll-theme-quickstart.gemspec) file to see what dependencies get installed. This came with the scaffold. 
+See the [gemspec](jekyll-theme-quickstart.gemspec) file to see what dependencies get installed. This came with the scaffold. Update minimum Jekyll version.
 
-Note the scaffold was generated with Jekyll 4 and still required `3.8`, so this was adjusted to `4.0` to be consistently updated for reuse of this project, even though there is nothing specific in this simple theme that is Jekyll 4 specific.
+_Note the scaffold was generated with Jekyll 4 and yet still required `3.8`, so this was adjusted to `4.0` to be consistently updated for reuse of this project, even though there is nothing specific in this simple theme that is Jekyll 4.
 
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+_TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets._
 
 
 ## Development
@@ -131,6 +131,6 @@ This project is intended to be a safe, welcoming space for collaboration, and co
 
 ## License
 
-See [LICENSE](/LICENSE).
+Released under [MIT](/LICENSE).
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
