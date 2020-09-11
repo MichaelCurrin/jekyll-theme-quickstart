@@ -1,14 +1,14 @@
 # Jekyll Theme Quickstart
 > Scaffold for a basic Jekyll theme for use as a reference or template
 
-<!--
+## What is a theme?
 
-_Note that this will **not** work on GitHub Pages as is. You need to use Jekyll Actions or Netlify for your deploy - since this is not a theme included in the supported GitHub Pages dependency versions. But... if you use the remote-theme plugin then you can use Jekyll theme on GH pages_
+If you build a Jekyll site, you'll typically use a theme to style your site or at least give a base which you and customize on top of.
 
--->
+A theme is a way of packaging layout files, CSS styling and includes files to be installed in another Jekyll project. A theme might be made from scratch or based on a static HTML. A theme is a great way of making styling reusable across projects by you and other people. There is overhead to setting up and maintaining a theme as its own repo. So if you only plan to use the styling once and not sharing, then consider just making a normal Jekyll site which had layouts and CSS in it. And it can be setup as template for others to use or fork and allows customization.
 
-## About
 
+## About this project
 
 ### Where this comes from
 
