@@ -74,7 +74,7 @@ source 'https://rubygems.org'
 gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
 ```
 
-If using remote theme, add this:
+If using remote theme approach, add this too:
 
 ```ruby
 gem 'jekyll-remote-theme'
