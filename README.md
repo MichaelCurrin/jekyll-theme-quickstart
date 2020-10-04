@@ -1,7 +1,8 @@
 # Jekyll Theme Quickstart
 > Scaffold for a basic Jekyll theme for use as a reference or template
 
-## What is a theme?
+
+## What is a Jekyll theme?
 
 If you build a Jekyll site, you'll typically use a theme to style your site or at least give a base which you and customize on top of.
 
@@ -12,9 +13,9 @@ See for example this project which is not a theme but just a template project wi
 - https://github.com/MichaelCurrin/artists-portfolio
 
 
-## About this project
+## About
 
-### Where this comes from
+### Where this project comes from
 
 The theme scaffold was generated with this command and Jekyll 4:
 
@@ -22,7 +23,7 @@ The theme scaffold was generated with this command and Jekyll 4:
 $ jekyll new-theme NAME
 ```
 
-Note that is different from `new` command.
+Note that is similar to the `jekyll new` command.
 
 ### Package a theme
 
