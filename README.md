@@ -6,11 +6,21 @@
 
 If you build a Jekyll site, you'll typically use a theme to style your site or at least give a base which you and customize on top of.
 
-A theme is a way of packaging layout files, CSS styling and includes files to be installed in another Jekyll project. A theme might be made from scratch or based on a static HTML. A theme is a great way of making styling reusable across projects by you and other people. There is overhead to setting up and maintaining a theme as its own repo. So if you only plan to use the styling once and not sharing, then consider just making a normal Jekyll site which had layouts and CSS in it. And it can be setup as template for others to use or fork and allows customization.
+A theme is a way of packaging layout files, CSS styling and includes files to be installed in another Jekyll project. A theme might be made from scratch or based on a static HTML. A theme is a great way of making styling reusable across projects by you and other people.
 
-See for example this project which is not a theme but just a template project with page structure, styling and sample content.
+A good example of a theme is Minima, which is the default theme used when runnign `jekyll new PATH`.
 
-- https://github.com/MichaelCurrin/artists-portfolio
+- GitHub: [jekyll/minima](https://github.com/jekyll/minima)
+
+As in Minima, you can add gems to the theme to make the `Gemfile` of a site lighter.
+
+### When to not use a theme
+
+There is overhead to setting up and maintaining a theme as its own repo. So if you only plan to use the styling **once** for your own project and you also do not intend other to use your styling, then consider just making a plain Jekyll site which has layouts and CSS in it. 
+
+And it can still be setup as template for others to use or fork and allows customization. See for example this project which is not a theme but just a template project with page structure, styling and sample content.
+
+- GitHub: [MichaelCurrin/artists-portfolio](https://github.com/MichaelCurrin/artists-portfolio)
 
 
 ## About
@@ -62,7 +72,6 @@ remote_theme: MichaelCurrin/jekyll-theme-quickstart
 plugins:
   - jekyll-remote-theme
 ```
-
 
 ### 2. Add to Gemfile
 
