@@ -1,31 +1,39 @@
 # Development
-> Setup and run a dev server that uses the theme
+> Setup and run a server for developing and testing the theme
 
 _TODO Figure out how to use Jekyll in the project, without making it install directly as a gem when the installing theme._
 
 
+## Install system dependencies
+
+Install Ruby and Bundler for your user - see [gist](https://gist.github.com/MichaelCurrin/3af38fca4e2903cdedfb8402c18b2936).
+
+
 ## Clone
 
-Clone the repo.
-
-
-## Install
-
-Install Ruby and Bundler for your user as per [gist](https://gist.github.com/MichaelCurrin/3af38fca4e2903cdedfb8402c18b2936).
-
-Configured Bundler.
+Clone the repo:
 
 ```sh
-$ bundle config ser --local path vendor/bundle
+$ git clone git@github.com:MichaelCurrin/jekyll-theme-quickstart.git
+$ cd jekyll-theme-quickstart
 ```
 
-Install project dependencies.
+
+## Install project dependencies
+
+Configure Bundler:
+
+```sh
+$ bundle config set --local path vendor/bundle
+```
+
+Install project dependencies:
 
 ```sh
 $ bundle install
 ```
 
-This will not install the theme itself, just dependencies in [Gemfile](/Gemfile).
+This will not install the theme itself, just the dependencies in [Gemfile](/Gemfile):
 
 - `gemspec`
 
