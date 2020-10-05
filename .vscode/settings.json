@@ -7,6 +7,7 @@
         "README.md": "markdown",
         "development.md": "markdown",
         "install-theme.md": "markdown",
-        "notes.md": "markdown"
+        "notes.md": "markdown",
+        "publishing.md": "markdown",
     },
 }
