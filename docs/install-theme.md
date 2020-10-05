@@ -1,13 +1,15 @@
-# Install as theme
-> How to install a theme published on RubyGems
-
-_Note: This is theme is not published to RubyGems so these commands will not work. This is here for completeness as a reference. See the approach in [README.md](README.md#installation)_
-
+# Install theme
+> How to install a theme
 
 1. Add your `Gemfile`:
-    ```ruby
-    gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
-    ```
+    - Install from GitHub.
+        ```ruby
+        gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
+        ```
+    - Install from RubyGems (will **not** work in this case).
+        ```ruby
+        gem "jekyll-theme-quickstart"
+        ```
 2. Add to your `_config.yml`:
     ```yaml
     theme: jekyll-theme-quickstart
