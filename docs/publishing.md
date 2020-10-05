@@ -1,18 +1,18 @@
 # Publishing
 > A guide to publishing a theme, if you are maintaining this theme
 
-If you need to publish your theme to RubyGems, follow these instructions as per Jekyll docs. Otherwise, you can ignore this seciton and just ignore from a Github URL.
+If you need to publish your theme to RubyGems, follow these instructions as per Jekyll docs. Otherwise, you can ignore this section and just ignore from a Github URL.
 
 
-## Increment version
+## 1. Increment version
 
 Update the release number in the `.gemspec` file.
 
 
-## Build
+## 2. Build
 
 ```sh
-$ gem build jekyll-theme-quickstart.gemspec
+$ make build
 ```
 ```
   Successfully built RubyGem
@@ -27,14 +27,12 @@ Note the package `.gem` file added in the root.
 jekyll-theme-quickstart-0.1.0.gem
 ```
 
-This is excluded from version control. 
-
-Unfortunately this is zipped file so it is not so readable directly.
+This binary archive is excluded from version control.
 
 
-## Push
+## 3. Push
 
-Push to publish on RubyGems. Requires an account and credentials.
+Publish to RubyGems. This requires an account and credentials setup.
 
 ```sh
 $ gem push jekyll-theme-quickstart-*.gem
