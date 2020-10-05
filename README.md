@@ -1,6 +1,11 @@
 # Jekyll Theme Quickstart
 > Scaffold for a basic Jekyll theme for use as a reference or template
 
+[![Ruby - >=2.3](https://img.shields.io/badge/Ruby->=2.3-blue?logo=ruby&logoColor=white)](https://ruby-lang.org)
+[![Jekyll - 3.9](https://img.shields.io/badge/Jekyll-3.9-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/jekyll-theme-quickstart)](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tags/?include_prereleases&sort=semver)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+
 
 ## What is a Jekyll theme?
 
@@ -16,7 +21,7 @@ As in Minima, you can add gems to the theme to make the `Gemfile` of a site ligh
 
 ### When to not use a theme
 
-There is overhead to setting up and maintaining a theme as its own repo. So if you only plan to use the styling **once** for your own project and you also do not intend other to use your styling, then consider just making a plain Jekyll site which has layouts and CSS in it. 
+There is overhead to setting up and maintaining a theme as its own repo. So if you only plan to use the styling **once** for your own project and you also do not intend other to use your styling, then consider just making a plain Jekyll site which has layouts and CSS in it.
 
 And it can still be setup as template for others to use or fork and allows customization. See for example this project which is not a theme but just a template project with page structure, styling and sample content.
 
