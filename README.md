@@ -78,6 +78,8 @@ plugins:
   - jekyll-remote-theme
 ```
 
+Optionally set a version at the remote theme value e.g. `@v1.0.0` or `@develop`.
+
 ### 2. Add to Gemfile
 
 Update your project's `Gemfile`.
