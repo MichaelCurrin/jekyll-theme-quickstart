@@ -82,17 +82,36 @@ plugins:
 
 Update your project's `Gemfile`.
 
+### GH Pages supported theme
+
+Just to mention the standard flow for themes supported on GH:
+
+```ruby
+source 'https://rubygems.org'
+
+gem 'minima', '~> 2.5.1'
+```
+
+###  Remote theme
+
+If you want to run your own them on GH Pages, you need to use the Remote Theme plugin. This will download the theme for you both locally and on GH Pages, so you don't have to install your theme directly.
+
+```ruby
+source 'https://rubygems.org'
+
+gem 'jekyll-remote-theme', '~> 0.4.2'
+```
+
+### Outside GH Pages
+
+If running outside of GH Pages (like with GH Actions or Netlify), you can install like this without using Remote Theme plugin.
+
 ```ruby
 source 'https://rubygems.org'
 
 gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
 ```
 
-If using remote theme approach, add this too:
-
-```ruby
-gem 'jekyll-remote-theme'
-```
 
 ### 3. Install
 
@@ -110,7 +129,21 @@ $ bundle install
 
 ### Installed path
 
-Note that the theme will get installed to:
+#### GH Pages supported theme
+
+Themes downloaded from RubyGems usually install here:
+
+```
+vendor/bundle/ruby/RUBY_VERSION/gems/THEME_NAME-THEME_VERSION
+```
+
+#### Remote theme
+
+I don't know where the theme downloaded with Remote Theme gets installed - it might just be in memory when running the build step.
+
+#### Outside GH Pages
+
+If you added your theme to your Gemfile directly and installed from GitHub URL, it will get installed here:
 
 ```
 vendor/bundle/ruby/RUBY_VERSION/bundler/gems/THEME_NAME-THEME_VERSION
@@ -118,11 +151,7 @@ vendor/bundle/ruby/RUBY_VERSION/bundler/gems/THEME_NAME-THEME_VERSION
 
 Where the version at the end is a hash (`123456789abc`) or a tag number (`1.0.0`).
 
-Themes installed from RubyGems usually install here:
 
-```
-vendor/bundle/ruby/RUBY_VERSION/gems/THEME_NAME-THEME_VERSION
-```
 
 ### Installed dependencies
 
