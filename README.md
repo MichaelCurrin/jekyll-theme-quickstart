@@ -7,9 +7,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 
+## How to use this project
+
 <div align="center">
 
+Create a new project from this template, or just use the code or docs as a reference.
+
 [![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/jekyll-theme-quickstart/generate)
+
+You can also view a live demo on GH Pages - this is served from the `gh-pages` branch and uses the Remote Theme plugin to load the theme from GitHub.
+
 [![GH Pages - View demo](https://img.shields.io/badge/GH_Pages-View_demo-green?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-theme-quickstart/)
 
 </div>
