@@ -9,17 +9,29 @@
 
 ## How to use this project
 
-<div align="center">
+### Quickstart
 
-Create a new project from this template, or just use the code or docs as a reference.
+Create a new project from this template.
+
+<div align="center">
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/jekyll-theme-quickstart/generate)
 
-You can also view a live demo on GH Pages - this is served from the `gh-pages` branch and uses the Remote Theme plugin to load the theme from GitHub.
+</div>
+
+Or just use the code or docs here as a reference.
+
+### Demo
+
+View a live demo on GH Pages.
+
+<div align="center">
 
 [![GH Pages - View demo](https://img.shields.io/badge/GH_Pages-View_demo-green?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-theme-quickstart/)
 
 </div>
+
+The demo code is on the [gh-pages](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/gh-pages) branch and uses the Remote Theme plugin to load the theme from GitHub.
 
 
 ## What is a Jekyll theme?
