@@ -7,6 +7,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/jekyll-theme-quickstart/generate)
+[![GH Pages - View demo](https://img.shields.io/badge/GH_Pages-View_demo-green?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-theme-quickstart/)
+
+</div>
+
+
 ## What is a Jekyll theme?
 
 If you build a Jekyll site, you'll typically use a theme to style your site or at least give a base which you and customize on top of.
