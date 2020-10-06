@@ -1,0 +1,23 @@
+### Site metadata ###
+
+title: Jekyll Theme Quickstart Demo
+description: "Demonstrate build a template them on GitHub Pages"
+
+github_username: MichaelCurrin
+
+### Build settings ###
+
+url: "https://michaelcurrin.github.io"
+baseurl: "/jekyll-theme-quickstart"
+
+remote_theme: MichaelCurrin/jekyll-theme-quickstart
+
+plugins:
+  - jekyll-remote-theme
+
+exclude:
+  - README.md
+
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
