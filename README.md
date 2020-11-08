@@ -85,18 +85,15 @@ Resources:
 ## Installation
 >  Install this theme in your project
 
-This project is hosted on Github since there is less friction without the signup and publish part.
+This project is hosted on GitHub since there is less friction without the signup and publish part.
 
+### Install using Remote Themes plugin
 
-### 1. Add to config
+This is the only way to use a custom theme on GitHub Pages without using CI. Only a few standard themes are available so you have to use this plugin to fetch your custom theme.
 
-Update your project's `_config.yaml`:
+#### 1. Add to config
 
-```yaml
-theme: jekyll-theme-quickstart
-```
-
-If using GitHub Pages, you can't use custom plugins and themes. But you can use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach instead to load any theme at a GitHub repo address.
+Use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach instead to load any theme at a GitHub repo address.
 
 ```yaml
 remote_theme: MichaelCurrin/jekyll-theme-quickstart
@@ -107,13 +104,11 @@ plugins:
 
 Optionally set a version at the `remote_theme` value e.g. `@v1.0.0` or `@develop`.
 
-### 2. Add to Gemfile
+#### 2. Add to Gemfile
 
 Update your project's `Gemfile`.
 
-### Remote theme plugin on GH Pages
-
-If you want to run this custom theme on GH Pages, you need to use the Remote Theme plugin as below. This will download the theme for you both locally and on GH Pages, so you do not have to add your custom theme to the Gemfile..
+When doing a build, this gem will download the theme for you both locally and on GH Pages, so you do **not** have to add your custom theme to the Gemfile.
 
 ```ruby
 source 'https://rubygems.org'
@@ -125,20 +120,33 @@ gem 'jekyll-remote-theme', '~> 0.4.2'
 
 Or, if running outside of GH Pages where custom gems are allowed (like with GH Actions or Netlify), you can install like this, without using the Remote Theme plugin.
 
+#### 1. Add to config
+
+Update your project's `_config.yaml`:
+
+```yaml
+theme: jekyll-theme-quickstart
+```
+
+#### 2. Add to Gemfile
+
 _TODO Update your version of this file on a new repo, using just one of the two approaches._
+
+Install from RubyGems.
 
 ```ruby
 source 'https://rubygems.org'
 
-# Install from RubyGems.
 gem 'jekyll-theme-quickstart', '~> 1.0.0'
+```
 
-# Install from GitHub.
+Install from GitHub.
+
+```ruby
 gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
 ```
 
-
-### 3. Install
+### Install project gems
 
 Configure Bundler locally - only needed once.
 
