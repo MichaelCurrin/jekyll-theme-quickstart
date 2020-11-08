@@ -96,7 +96,7 @@ Update your project's `_config.yaml`:
 theme: jekyll-theme-quickstart
 ```
 
-If using GitHub Pages, you can't use custom plugins and themes. But you can use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach instead to load any theme.
+If using GitHub Pages, you can't use custom plugins and themes. But you can use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach instead to load any theme at a GitHub repo address.
 
 ```yaml
 remote_theme: MichaelCurrin/jekyll-theme-quickstart
@@ -105,7 +105,7 @@ plugins:
   - jekyll-remote-theme
 ```
 
-Optionally set a version at the remote theme value e.g. `@v1.0.0` or `@develop`.
+Optionally set a version at the `remote_theme` value e.g. `@v1.0.0` or `@develop`.
 
 ### 2. Add to Gemfile
 
@@ -113,7 +113,7 @@ Update your project's `Gemfile`.
 
 ### GH Pages supported theme
 
-Just to mention the standard flow for themes supported on GH:
+Just to mention the standard flow for themes that are supported on GH:
 
 ```ruby
 source 'https://rubygems.org'
@@ -123,7 +123,7 @@ gem 'minima', '~> 2.5.1'
 
 ###  Remote theme
 
-If you want to run your own them on GH Pages, you need to use the Remote Theme plugin. This will download the theme for you both locally and on GH Pages, so you don't have to install your theme directly.
+If you want to run this custom theme on GH Pages, you need to use the Remote Theme plugin as below. This will download the theme for you both locally and on GH Pages, so you do not have to add your custom theme to the Gemfile..
 
 ```ruby
 source 'https://rubygems.org'
@@ -133,7 +133,7 @@ gem 'jekyll-remote-theme', '~> 0.4.2'
 
 ### Outside GH Pages
 
-If running outside of GH Pages (like with GH Actions or Netlify), you can install like this without using Remote Theme plugin.
+Or, if running outside of GH Pages where custom gems are allowed (like with GH Actions or Netlify), you can install like this, without using the Remote Theme plugin.
 
 ```ruby
 source 'https://rubygems.org'
@@ -191,7 +191,7 @@ _Note the scaffold was generated with Jekyll 4 and yet still required `3.8`, so 
 
 ## Usage
 
-_TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets._
+_TODO: Write your usage instructions here. Describe your available layouts, includes, SASS and/or assets._
 
 
 ## Development
