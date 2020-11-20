@@ -11,7 +11,7 @@
 
 ### Quickstart
 
-Create a new project from this template.
+Create a new project from this template. Or just use the code or docs here as a reference.
 
 <div align="center">
 
@@ -19,11 +19,9 @@ Create a new project from this template.
 
 </div>
 
-Or just use the code or docs here as a reference.
-
 ### Demo
 
-View a live demo on GH Pages.
+View a live demo on GH Pages:
 
 <div align="center">
 
