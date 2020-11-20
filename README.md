@@ -69,7 +69,7 @@ The part that allows this project gem to be packaged as an installable gem-based
 
 - [jekyll-theme-quickstart.gemspec](/jekyll-theme-quickstart.gemspec)
 
-The other parts like the config and Gemfile or the layout and includes diretories are standard for a Jekyll project. The markdown pages in the root are included for a local demo and are not packaged in the theme.
+The other parts like the config and Gemfile or the layout and includes directories are standard for a Jekyll project. The markdown pages in the root are included for a local demo and are not packaged in the theme.
 
 Resources:
 
