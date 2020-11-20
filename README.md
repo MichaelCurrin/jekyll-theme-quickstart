@@ -42,8 +42,6 @@ A good example of a theme is Minima, which is the default theme used when runnin
 
 [![jekyll - minima](https://img.shields.io/static/v1?label=jekyll&message=minima&color=blue&logo=github)](https://github.com/jekyll/minima)
 
-As in Minima, you can add gems to your theme's `*.gemspec` file. That means you don't have to add them to your project's `Gemfile`.
-
 ### When to not use a theme
 
 There is overhead to setting up and maintaining a theme as its own repo. So if you only plan to use the styling **once** for your own project and you also do not intend other to use your styling, then consider just making a plain Jekyll site which has layouts and CSS in it.
