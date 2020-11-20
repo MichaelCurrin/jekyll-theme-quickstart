@@ -38,11 +38,11 @@ If you build a Jekyll site, you'll typically use a theme to style your site or a
 
 A theme is a way of packaging layout files, CSS styling and includes files to be installed in another Jekyll project. A theme might be made from scratch or based on a static HTML. A theme is a great way of making styling reusable across projects by you and other people.
 
-A good example of a theme is Minima, which is the default theme used when runnign `jekyll new PATH`.
+A good example of a theme is Minima, which is the default theme used when running `jekyll new PATH`.
 
-- GitHub: [jekyll/minima](https://github.com/jekyll/minima)
+[![jekyll - minima](https://img.shields.io/static/v1?label=jekyll&message=minima&color=blue&logo=github)](https://github.com/jekyll/minima)
 
-As in Minima, you can add gems to the theme to make the `Gemfile` of a site lighter.
+As in Minima, you can add gems to your theme's `*.gemspec` file. That means you don't have to add them to your project's `Gemfile`.
 
 ### When to not use a theme
 
@@ -50,7 +50,7 @@ There is overhead to setting up and maintaining a theme as its own repo. So if y
 
 And it can still be setup as template for others to use or fork and allows customization. See for example this project which is not a theme but just a template project with page structure, styling and sample content.
 
-- GitHub: [MichaelCurrin/artists-portfolio](https://github.com/MichaelCurrin/artists-portfolio)
+[![MichaelCurrin - artists-portfolio](https://img.shields.io/static/v1?label=MichaelCurrin&message=artists-portfolio&color=blue&logo=github)](https://github.com/MichaelCurrin/artists-portfolio)
 
 
 ## About
