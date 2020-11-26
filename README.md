@@ -89,14 +89,12 @@ This is the only way to use a custom theme on GitHub Pages without using CI. Onl
 
 #### 1. Add to config
 
-Use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach instead to load any theme at a GitHub repo address.
+Use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach to load a theme using GitHub details.
 
-```yaml
-remote_theme: MichaelCurrin/jekyll-theme-quickstart
-
-plugins:
-  - jekyll-remote-theme
-```
+- `_config.yml`
+    ```yaml
+    remote_theme: MichaelCurrin/jekyll-theme-quickstart
+    ```
 
 Optionally set a version at the `remote_theme` value e.g. `@v1.0.0` or `@develop`.
 
@@ -106,11 +104,18 @@ Update your project's `Gemfile`.
 
 When doing a build, this gem will download the theme for you both locally and on GH Pages, so you do **not** have to add your custom theme to the Gemfile.
 
-```ruby
-source 'https://rubygems.org'
+- `Gemfile`
+    ```ruby
+    source 'https://rubygems.org'
 
-gem 'jekyll-remote-theme', '~> 0.4.2'
-```
+    group :jekyll_plugin do
+      gem 'jekyll-remote-theme', '~> 0.4.2'
+    end
+    ```
+
+By using the group above, the plugin will be enabled for you so you do not have to add it to `plugins` in your config.
+
+Continue to [Install project gems](#install-project-gems)
 
 ### Outside GH Pages
 
@@ -130,17 +135,22 @@ _TODO Update your version of this file on a new repo, using just one of the two 
 
 Install from RubyGems.
 
-```ruby
-source 'https://rubygems.org'
+- `Gemfile`
+    ```ruby
+    source 'https://rubygems.org'
 
-gem 'jekyll-theme-quickstart', '~> 1.0.0'
-```
-
+    gem 'jekyll-theme-quickstart', '~> 1.0.0'
+    ```
 Install from GitHub.
 
-```ruby
-gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
-```
+- `Gemfile`
+    ```ruby
+    source 'https://rubygems.org'
+    
+    gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
+    ```
+
+Continue to the section below.
 
 ### Install project gems
 
@@ -197,7 +207,7 @@ _TODO: Write your usage instructions here. Describe your available layouts, incl
 
 ## Development
 
-See the [docs](/docs/) directory.
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue)](/docs/)
 
 
 ## Contributing
