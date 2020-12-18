@@ -83,7 +83,7 @@ Resources:
 
 This project is hosted on GitHub since there is less friction without the signup and publish part.
 
-### Install using Remote Themes plugin
+### Install using Remote Theme plugin
 
 This is the only way to use a custom theme on GitHub Pages without using CI. Only a few standard themes are available so you have to use this plugin to fetch your custom theme.
 
@@ -106,6 +106,11 @@ Update your project's `Gemfile`.
     ```ruby
     source "https://rubygems.org"
 
+    gem "jekyll', '~> 3.9"
+    gem "kramdown-parser-gfm", "~> 1.1.0"
+
+    gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
+
     group :jekyll_plugin do
       gem "jekyll-remote-theme", "~> 0.4.2"
     end
@@ -114,12 +119,13 @@ Update your project's `Gemfile`.
 ##### Notes
 
 - When doing a build, the Remote Theme plugin will download the theme for you both locally and on GH Pages, so you do **not** have to add your custom theme to the Gemfile.
-- You don't have to include the Jekyll part as the theme depends on Jekyll, but for more control it helps to set Jekyll in your Gemfile. Especially if a theme supports both Jekyll 3 and 4 and you don't want to get Jekyll 4.
+- You don't have to include the Jekyll part as the theme depends on Jekyll, but it allows more control. Especially if a theme supports both Jekyll 3 and 4 and you don't want to get Jekyll 4.
+- Installing the theme from Gemfile is not to use the theme itself, but to get the theme's dependencies installed. This avoids an issue where Remote Theme plugin tells you that you don't have the theme's dependencies installed.
 - By using a _group_ as above, the plugin will be enabled for you so you do not have to add it to `plugins` in your config.
 
 Continue to [Install project gems](#install-project-gems)
 
-### Outside GH Pages
+### Install outside GH Pages
 
 Or, if running outside of GH Pages where custom gems are allowed (like with GH Actions or Netlify), you can install like this, without using the Remote Theme plugin.
 
@@ -143,6 +149,7 @@ Install from RubyGems.
 
     gem "jekyll-theme-quickstart", "~> 1.0.0"
     ```
+
 Install from GitHub.
 
 - `Gemfile`
