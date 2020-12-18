@@ -102,18 +102,20 @@ Optionally set a version at the `remote_theme` value e.g. `@v1.0.0` or `@develop
 
 Update your project's `Gemfile`.
 
-When doing a build, this gem will download the theme for you both locally and on GH Pages, so you do **not** have to add your custom theme to the Gemfile.
-
 - `Gemfile`
     ```ruby
-    source 'https://rubygems.org'
+    source "https://rubygems.org"
 
     group :jekyll_plugin do
-      gem 'jekyll-remote-theme', '~> 0.4.2'
+      gem "jekyll-remote-theme", "~> 0.4.2"
     end
     ```
 
-By using the group above, the plugin will be enabled for you so you do not have to add it to `plugins` in your config.
+##### Notes
+
+- When doing a build, the Remote Theme plugin will download the theme for you both locally and on GH Pages, so you do **not** have to add your custom theme to the Gemfile.
+- You don't have to include the Jekyll part as the theme depends on Jekyll, but for more control it helps to set Jekyll in your Gemfile. Especially if a theme supports both Jekyll 3 and 4 and you don't want to get Jekyll 4.
+- By using a _group_ as above, the plugin will be enabled for you so you do not have to add it to `plugins` in your config.
 
 Continue to [Install project gems](#install-project-gems)
 
@@ -137,17 +139,17 @@ Install from RubyGems.
 
 - `Gemfile`
     ```ruby
-    source 'https://rubygems.org'
+    source "https://rubygems.org"
 
-    gem 'jekyll-theme-quickstart', '~> 1.0.0'
+    gem "jekyll-theme-quickstart", "~> 1.0.0"
     ```
 Install from GitHub.
 
 - `Gemfile`
     ```ruby
-    source 'https://rubygems.org'
+    source "https://rubygems.org"
     
-    gem 'jekyll-theme-quickstart', git: 'https://github.com/MichaelCurrin/jekyll-theme-quickstart'
+    gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
     ```
 
 Continue to the section below.
