@@ -118,9 +118,8 @@ Update your project's `Gemfile`.
 
 ##### Notes
 
-- When doing a build, the Remote Theme plugin will download the theme for you both locally and on GH Pages, so you do **not** have to add your custom theme to the Gemfile.
-- You don't have to include the Jekyll part as the theme depends on Jekyll, but it allows more control. Especially if a theme supports both Jekyll 3 and 4 and you don't want to get Jekyll 4.
-- Installing the theme from Gemfile is not to use the theme itself, but to get the theme's dependencies installed. This avoids an issue where Remote Theme plugin tells you that you don't have the theme's dependencies installed.
+- I recommend adding the `jekyll` part to lock to a certain version - especially if the theme allows 3 and 4 and so would upgrade you to 4.
+- By adding the theme to your Gemfile, you install the theme and its dependencies - if you don't do this you will likely get errors on a local build. When the build is run, the remote theme plugin is used to get the theme, so the locally installed theme is not actually used, but its dependencies are.
 - By using a _group_ as above, the plugin will be enabled for you so you do not have to add it to `plugins` in your config.
 
 Continue to [Install project gems](#install-project-gems)
