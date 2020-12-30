@@ -29,7 +29,7 @@ View a live demo on GH Pages:
 
 </div>
 
-The demo code is on the [gh-pages](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/gh-pages) branch and uses the Remote Theme plugin to load the theme from the `master` branch of this project.
+The demo code is on the [gh-pages](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/gh-pages) branch and uses the Remote Theme plugin approach to load the theme from the `master` branch of this project.
 
 
 ## What is a Jekyll theme?
@@ -81,13 +81,13 @@ Resources:
 ## Installation
 >  Install this theme in your project
 
-This project is hosted on GitHub since there is less friction without the signup and publish part.
+Two approaches are covered for installing the theme. The Remote Theme approach is necessary for plain GH Pages setup, while the second approach needs some kind of CI like GitHub Actions or Netlify. Both require only a few lines of code.
 
-### Install using Remote Theme plugin
+### GH Pages Remote Theme flow
 
-This is the only way to use a custom theme on GitHub Pages without using CI. Only a few standard themes are available so you have to use this plugin to fetch your custom theme.
+Only a few standard themes are available on the locked GH Pages environment. So you must use this Remote Theme plugin to fetch your custom theme.
 
-#### 1. Add to config
+#### 1. Add to the config
 
 Use the [remote theme](https://github.com/benbalter/jekyll-remote-theme) approach to load a theme using GitHub details.
 
@@ -124,11 +124,11 @@ Update your project's `Gemfile`.
 
 Continue to [Install project gems](#install-project-gems)
 
-### Install outside GH Pages
+### Custom CI flow
 
-Or, if running outside of GH Pages where custom gems are allowed (like with GH Actions or Netlify), you can install like this, without using the Remote Theme plugin.
+While gems are locked on GH Pages, you can install custom gems like a theme if you use a CI flow. Such as with GH Actions or Netlifym.
 
-#### 1. Add to config
+#### 1. Add to your config
 
 Update your project's `_config.yaml`:
 
@@ -138,9 +138,9 @@ theme: jekyll-theme-quickstart
 
 #### 2. Add to Gemfile
 
-_TODO Update your version of this file on a new repo, using just one of the two approaches._
+_TODO Update your version of this file on your new repo, using just **one** of the two approaches. Note the RubyGems approach needs signup and publishing on RubyGems site while the GitHub approach only needs a public repo to exist._
 
-Install from RubyGems.
+To install from RubyGems:
 
 - `Gemfile`
     ```ruby
@@ -149,7 +149,7 @@ Install from RubyGems.
     gem "jekyll-theme-quickstart", "~> 1.0.0"
     ```
 
-Install from GitHub.
+To install from GitHub:
 
 - `Gemfile`
     ```ruby
@@ -158,9 +158,9 @@ Install from GitHub.
     gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
     ```
 
-Continue to the section below.
-
 ### Install project gems
+
+Now install your gems locally. This is also needed on GH Actions. Netlify takes care of gems for you though.
 
 Configure Bundler locally - only needed once.
 
@@ -182,15 +182,13 @@ Useful info for understanding where your theme gets installed based on the appro
 
 Themes downloaded from RubyGems usually install here:
 
-```
-vendor/bundle/ruby/RUBY_VERSION/gems/THEME_NAME-THEME_VERSION
-```
+- `vendor/bundle/ruby/RUBY_VERSION/gems/THEME_NAME-THEME_VERSION`
 
-#### Remote theme
+#### GH Pages Remote Theme flow
 
 The Remote Theme plugin stores the theme in memory and not on disk with gems.
 
-#### Outside GH Pages
+#### Custom CI flow
 
 If you added your theme to your Gemfile directly and installed from GitHub URL, it will get installed here:
 
@@ -200,10 +198,9 @@ vendor/bundle/ruby/RUBY_VERSION/bundler/gems/THEME_NAME-THEME_VERSION
 
 Where the version at the end is a hash (`123456789abc`) or a tag number (`1.0.0`).
 
-
 ### Installed dependencies
 
-See the [gemspec](jekyll-theme-quickstart.gemspec) file to see what dependencies get installed. This came with the scaffold. Update minimum Jekyll version.
+See the [gemspec](/jekyll-theme-quickstart.gemspec) file to see what dependencies get installed. This came with the scaffold. Update minimum Jekyll version.
 
 _Note the scaffold was generated with Jekyll 4 and yet still required `3.8`, so this was adjusted to `4.0` to be consistently updated for reuse of this project, even though there is nothing specific in this simple theme that is Jekyll 4._
 
@@ -227,6 +224,6 @@ This project is intended to be a safe, welcoming space for collaboration, and co
 
 ## License
 
-Released under [MIT](/LICENSE).
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MicharlCurrin).
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
