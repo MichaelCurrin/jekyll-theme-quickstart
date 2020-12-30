@@ -224,6 +224,6 @@ This project is intended to be a safe, welcoming space for collaboration, and co
 
 ## License
 
-Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MicharlCurrin).
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
