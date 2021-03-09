@@ -25,7 +25,7 @@ View a live demo on GH Pages:
 
 <div align="center">
 
-[![GH Pages - View demo](https://img.shields.io/badge/GH_Pages-View_demo-green?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-theme-quickstart/)
+[![View demo](https://img.shields.io/badge/View-Demo_site-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-theme-quickstart/)
 
 </div>
 
