@@ -3,6 +3,8 @@
 
 This is a demo site on the [gh-pages](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/gh-pages) branch.
 
+The content here is minimal - some configs and pages. All the layout files, includes files, assets, etc. are all handled by the configured theme.
+
 
 ## View demo
 
