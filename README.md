@@ -1,9 +1,10 @@
 # Jekyll Theme Quickstart Demo
-> Demonstrate building a custom theme on GitHub Pages
+> Example of using Remote Theme plugin to install a theme on a GH Pages site
 
-This is a demo site on the [gh-pages](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/gh-pages) branch.
 
-The content here is minimal - some configs and pages. All the layout files, includes files, assets, etc. are all handled by the configured theme.
+## About
+
+This is a demo site on the `gh-pages` branch. The content here is minimal - some configs and pages. All the layout files, includes files, assets, etc. are all handled by the configured theme.
 
 
 ## View demo
