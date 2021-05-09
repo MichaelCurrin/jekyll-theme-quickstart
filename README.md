@@ -14,18 +14,20 @@
 
 ## About
 
-This is a demo site on the `gh-pages` branch. The content here is minimal - some configs and pages. All the layout files, includes files, assets, etc. are all handled by the configured theme.
+This is a demo site on the `gh-pages` branch. The content here is minimal - some configs and a few pages. All the layout files, includes files, assets, etc. are all handled by the configured theme on the [master](https://github.com/MichaelCurrin/jekyll-theme-quickstart) branch. 
 
-This is setup in `Gemfile` and `_config.yml` with the chosen theme. In this case, the theme happens to be on the same repo but just on the [master](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/master) branch. But typically, you would point it at theme you find on GitHub.
+In this situation, the site and the theme are in the _same_ repo. But, typically, you would have your site content and the Remote Theme plugin on your main branch and point the plugin at a _different_ GitHub repo, as a theme that you or someone else made.
 
 
 ## Remote Theme
 
-The GitHub Pages environment has a **locked** set of gems and versions, listed [here](https://pages.github.com/versions/). If you want to use a theme not supported on the list of 10 or so themes there, then you either need a custom build flow (like with GH Actions or Netlify). Or just use the Remote Theme plugin, with a couple of lines.
+The Remote Theme flow is setup here in `Gemfile` and `_config.yml`. Why is it needed? Well, the GitHub Pages environment has a **locked** set of gems and versions, listed [here](https://pages.github.com/versions/). If you want to use a theme that is not supported on the list of 10 or so themes there, then you either need a custom build flow (like with GH Actions or Netlify). Or use the Remote Theme plugin, with a couple of lines.
 
-The Remote Theme plugin can actually get **any** Jekyll theme which is hosted as a GitHub repo. Whether it has a gemspec file at the root. This elegant as you can switch themes by changing values in your config and Gemfile only, without having to fork or copy the entire theme.
+The Remote Theme plugin can load **any** Jekyll theme which is hosted as a public GitHub repo, if it has a gemspec file at the root. This is elegant as you can switch themes by changing values in your config and Gemfile only, without having to fork or copy the entire theme.
 
 This demo uses the Remote Theme plugin approach as follows:
+
+### Config 
 
 Note [\_config.yml](/_config.yml) enables the plugin and choose a theme:
 
@@ -36,7 +38,9 @@ plugins:
   - jekyll-remote-theme
 ```
 
-And the [Gemfile](/Gemfile) file installs the theme and plugin for local use. 
+### Gemfile 
+
+The [Gemfile](/Gemfile) file installs the theme and plugin for local use. 
 
 ```ruby
 gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
@@ -46,4 +50,4 @@ group :jekyll_plugins do
 end
 ```
 
-The theme doesn't always _have_ to be installed locally like this, but does help you when you have a theme that has dependencies to be installed too.
+The theme doesn't always _need_ to be installed in addition to the remote theme plugin, like it is set up here for local use. But, it is a good idea. As it helps you when you have a theme that has dependencies to be installed too. So when you run `bundle install`, you get the theme's dependencies and won't get errors that they are missing when you start a dev server. A reminder that even when using the Remote Theme plugin, the gem dependencies of the chosen theme can still only be the dependencies on the GH Pages locked versions list.
