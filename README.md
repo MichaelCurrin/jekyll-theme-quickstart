@@ -11,12 +11,13 @@
 </div>
 
 
-
 ## About
 
 This is a demo site on the `gh-pages` branch. The content here is minimal - some configs and a few pages. All the layout files, includes files, assets, etc. are all handled by the configured theme on the [master](https://github.com/MichaelCurrin/jekyll-theme-quickstart) branch. 
 
 In this situation, the site and the theme are in the _same_ repo. But, typically, you would have your site content and the Remote Theme plugin on your main branch and point the plugin at a _different_ GitHub repo, as a theme that you or someone else made.
+
+Note: If you are _not_ using GitHub Pages to build but are using something like GitHub Actions or Netlify, you don't need to use Remote Theme plugin and can use the standard setup of `theme` set in your config and your theme gem in `Gemfile`.
 
 
 ## Remote Theme
