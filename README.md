@@ -29,7 +29,7 @@ View a live demo on GH Pages:
 
 </div>
 
-The demo code is on the [gh-pages](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/gh-pages) branch and uses the Remote Theme plugin approach to load the theme from the `master` branch of this project.
+The demo site's code is on this repo's own [gh-pages](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tree/gh-pages) branch and uses the Remote Theme plugin approach to load the theme from the main branch of this project.
 
 
 ## What is a Jekyll theme?
