@@ -4,11 +4,15 @@
 
 ## View demo
 
+A link to a live site that uses Remote Theme plugin on GitHub Pages.
+
 <div align="center">
 
 [![View demo](https://img.shields.io/badge/View-Demo_site-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-theme-quickstart/)
 
 </div>
+
+See below for a short tutorial on how this demo was setup so you can use the Remote Theme plugin too, whether for your own theme or a theme you found.
 
 
 ## About
