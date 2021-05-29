@@ -1,10 +1,11 @@
 # Jekyll Theme Quickstart
 > Scaffold for a basic Jekyll theme for use as a reference or template
 
-[![Ruby - >=2.3](https://img.shields.io/badge/Ruby->=2.3-blue?logo=ruby&logoColor=white)](https://ruby-lang.org)
-[![Jekyll - 3.9](https://img.shields.io/badge/Jekyll-3.9-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/jekyll-theme-quickstart)](https://github.com/MichaelCurrin/jekyll-theme-quickstart/tags/?include_prereleases&sort=semver)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
+[![Ruby](https://img.shields.io/badge/Ruby->=2.3-blue?logo=ruby&logoColor=white)](https://ruby-lang.org)
+[![Jekyll](https://img.shields.io/badge/Jekyll-3.9-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
 
 
 ## How to use this project
@@ -126,7 +127,7 @@ Continue to [Install project gems](#install-project-gems)
 
 ### Custom CI flow
 
-While gems are locked on GH Pages, you can install custom gems like a theme if you use a CI flow. Such as with GH Actions or Netlifym.
+While gems are locked on GH Pages, you can install custom gems like a theme if you use a CI flow. Such as with GH Actions or Netlify.
 
 #### 1. Add to your config
 
@@ -154,7 +155,7 @@ To install from GitHub:
 - `Gemfile`
     ```ruby
     source "https://rubygems.org"
-    
+
     gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
     ```
 
@@ -201,8 +202,6 @@ Where the version at the end is a hash (`123456789abc`) or a tag number (`1.0.0`
 ### Installed dependencies
 
 See the [gemspec](/jekyll-theme-quickstart.gemspec) file to see what dependencies get installed. This came with the scaffold. Update minimum Jekyll version.
-
-_Note the scaffold was generated with Jekyll 4 and yet still required `3.8`, so this was adjusted to `4.0` to be consistently updated for reuse of this project, even though there is nothing specific in this simple theme that is Jekyll 4._
 
 
 ## Usage
