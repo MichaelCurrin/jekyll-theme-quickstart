@@ -19,9 +19,12 @@ See below for a short tutorial on how this demo was setup so you can use the Rem
 
 This is a demo site on the `gh-pages` branch. The content here is minimal - some configs and a few pages. All the layout files, includes files, assets, etc. are all handled by the configured theme on the [master](https://github.com/MichaelCurrin/jekyll-theme-quickstart) branch. 
 
-In this situation, the site and the theme are in the _same_ repo. But, typically, you would have your site content and the Remote Theme plugin on your main branch and point the plugin at a _different_ GitHub repo, as a theme that you or someone else made.
+In this situation, the site and the theme are in the _same_ repo. 
+But, typically, you would have your site content on your main branch and point the site at a _different_ GitHub repo which contains the theme, or the gem on RubyGems if the theme is published there.
 
-Note: If you are _not_ using GitHub Pages to build but are using something like GitHub Actions or Netlify, you don't need to use Remote Theme plugin and can use the standard setup of `theme` set in your config and your theme gem in `Gemfile`.
+If using GH Pages, you'll use Remote Theme plugin as below and point that at a repo name (the standard GH Pages environment limits you to a handful of themes unless you use Remote Theme plugin).
+
+If you are _not_ using plain GitHub Pages to build but are using something like GitHub Actions or Netlify, you don't need to use Remote Theme plugin and can use the standard setup of `theme` set in your config and your theme gem in `Gemfile`.
 
 
 ## Remote Theme
@@ -45,7 +48,7 @@ plugins:
 
 ### Gemfile 
 
-The [Gemfile](/Gemfile) file installs the theme and plugin for local use. 
+The [Gemfile](/Gemfile) file installs the theme and plugin, for local use. GH Pages will ignore this file and does not need it to exist.
 
 ```ruby
 gem "jekyll-theme-quickstart", git: "https://github.com/MichaelCurrin/jekyll-theme-quickstart"
@@ -55,4 +58,6 @@ group :jekyll_plugins do
 end
 ```
 
-The theme doesn't always _need_ to be installed in addition to the remote theme plugin, like it is set up here for local use. But, it is a good idea. As it helps you when you have a theme that has dependencies to be installed too. So when you run `bundle install`, you get the theme's dependencies and won't get errors that they are missing when you start a dev server. A reminder that even when using the Remote Theme plugin, the gem dependencies of the chosen theme can still only be the dependencies on the GH Pages locked versions list.
+The first line of that theme doesn't always _need_ to be there. But, it is a good idea. As it helps you when you have a theme that has dependencies to be installed too. So when you run `bundle install`, you get the theme's dependencies and won't get errors that they are missing when you start a dev server. A reminder that even when using the Remote Theme plugin, the gem dependencies of the chosen theme can still only be the dependencies on the GH Pages locked versions list.
+
+This also assumes that all the plugins used by the theme are supported on GH Pages. If it uses custom plugins, then you need GH Actions or Netlify instead.
